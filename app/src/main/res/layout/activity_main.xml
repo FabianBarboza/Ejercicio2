@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <EditText
+            android:id="@+id/edtNombreCompleto"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="@string/nombre"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/vertical">
+   <Button
+       android:id="@+id/botFecha"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:hint="@string/botonFecha" />
+
+    <EditText
+        android:id="@+id/edtFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/fecha"
+        android:inputType="date"
+        android:focusable="false"
+        android:clickable="true"
+        android:maxLines="1"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical">
+
+        <EditText
+            android:id="@+id/edtTelefono"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="@string/telefono"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical">
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="@string/email"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical">
+
+        <EditText
+            android:id="@+id/edtDescripcion"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="@string/descripicion"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical"
+        android:onClick="Enviar">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/botonAgregar"
+            android:onClick="Enviar" />
+    </LinearLayout>
+
+</LinearLayout>
